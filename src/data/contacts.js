@@ -27,6 +27,6 @@ export const contacts = ref([
   { id: 24, name: 'Xavier Tan', email: 'xavier@finhub.com', company: 'FinHub' },
   { id: 25, name: 'Yvonne Lim', email: 'yvonne@smarttech.com', company: 'SmartTech' },
   { id: 26, name: 'Zachary Chua', email: 'zachary@techcorp.com', company: 'TechCorp' },
-  { id: 11, name: 'Kelvin Tang', email: 'kelvintang@hotmail.com', company: 'TechCorp' },
+  { id: 27, name: 'Kelvin Tang', email: 'kelvintang@hotmail.com', company: 'TechCorp' },
 
 ]);
