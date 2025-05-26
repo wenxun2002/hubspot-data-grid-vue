@@ -1,5 +1,20 @@
-# Vue 3 + Vite
+# 📊 HubSpot-style Contact Data Grid (Vue 3 + Tailwind CSS)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A simple and elegant contact list data grid built with Vue 3 and styled using Tailwind CSS, inspired by the HubSpot UI. It supports:
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+- Sorting by name or email
+- Searching by name or email
+---
+
+##  Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/wenxun2002/hubspot-data-grid-vue.git
+cd hubspot-data-grid-vue
+npm install
+npm run dev
+```
