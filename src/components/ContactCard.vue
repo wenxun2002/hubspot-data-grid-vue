@@ -1,5 +1,5 @@
+<!-- for now no use because i make sure all data and UI is from App.vue only-->
 <template>
-    <!-- Card View -->
     <div
       :class="mode === 'card' ? 'border rounded-lg p-4 shadow hover:shadow-md transition hover:bg-white hover:text-black' 
       : 
@@ -14,16 +14,13 @@
         <span>ID: {{ contact.id }}</span>
       </div>
     </div>
-</template>
-  
+  </template>
   <script setup>
-  // Define props
   defineProps({
     contact: Object,
     mode: {
-      // Define the mode prop
       type: String,
-      default: 'card' // 'card' or 'list'
+      default: 'card'
     }
   });
   </script>
