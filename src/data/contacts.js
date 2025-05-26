@@ -1,0 +1,32 @@
+import { ref } from 'vue';
+
+export const contacts = ref([
+  { id: 1, name: 'Alice Tan', email: 'alice@abc.com', company: 'ABC Sdn Bhd' },
+  { id: 2, name: 'Ben Lim', email: 'ben@xyz.com', company: 'XYZ Solutions' },
+  { id: 3, name: 'Carol Ng', email: 'carol@test.com', company: 'Test Tech' },
+  { id: 4, name: 'Daniel Wong', email: 'daniel@netcorp.com', company: 'NetCorp' },
+  { id: 5, name: 'Elaine Chua', email: 'elaine@unidata.com', company: 'Unidata Sdn Bhd' },
+  { id: 6, name: 'Farid Ali', email: 'farid@innovate.com', company: 'Innovate Group' },
+  { id: 7, name: 'Grace Lee', email: 'grace@smarttech.com', company: 'SmartTech' },
+  { id: 8, name: 'Hafiz Omar', email: 'hafiz@securemail.com', company: 'SecureMail' },
+  { id: 9, name: 'Ivy Chin', email: 'ivy@techverse.com', company: 'Techverse' },
+  { id: 10, name: 'Jackie Lim', email: 'jackie@finhub.com', company: 'FinHub' },
+  { id: 11, name: 'Kelvin Tan', email: 'kelvin@techcorp.com', company: 'TechCorp' },
+  { id: 12, name: 'Lena Ng', email: 'lena@smartmail.com', company: 'SmartMail' },
+  { id: 13, name: 'Michael Chua', email: 'michael@techhub.com', company: 'TechHub' },
+  { id: 14, name: 'Nina Lim', email: 'nina@finhub.com', company: 'FinHub' },
+  { id: 15, name: 'Oliver Tan', email: 'oliver@smarttech.com', company: 'SmartTech' },  
+  { id: 16, name: 'Pauline Chua', email: 'pauline@techcorp.com', company: 'TechCorp' },
+  { id: 17, name: 'Qiang Li', email: 'qiang@smartmail.com', company: 'SmartMail' },
+  { id: 18, name: 'Rita Ng', email: 'rita@techhub.com', company: 'TechHub' },
+  { id: 19, name: 'Sam Tan', email: 'sam@finhub.com', company: 'FinHub' },
+  { id: 20, name: 'Tina Lim', email: 'tina@smarttech.com', company: 'SmartTech' },
+  { id: 21, name: 'Umair Khan', email: 'umair@techcorp.com', company: 'TechCorp' },
+  { id: 22, name: 'Vincent Chua', email: 'vincent@smartmail.com', company: 'SmartMail' },
+  { id: 23, name: 'Wendy Ng', email: 'wendy@techhub.com', company: 'TechHub' },
+  { id: 24, name: 'Xavier Tan', email: 'xavier@finhub.com', company: 'FinHub' },
+  { id: 25, name: 'Yvonne Lim', email: 'yvonne@smarttech.com', company: 'SmartTech' },
+  { id: 26, name: 'Zachary Chua', email: 'zachary@techcorp.com', company: 'TechCorp' },
+  { id: 11, name: 'Kelvin Tang', email: 'kelvintang@hotmail.com', company: 'TechCorp' },
+
+]);
