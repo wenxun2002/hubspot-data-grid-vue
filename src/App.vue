@@ -41,6 +41,7 @@
         <tr>
           <th class="py-2 px-4 cursor-pointer" @click="() => sortBy('name')">
             Name <span v-if="sortKey === 'name'">{{ sortOrderSymbol }}</span>
+            <!---->
           </th>
           <th class="py-2 px-4 cursor-pointer" @click="() => sortBy('email')">
             Email <span v-if="sortKey === 'email'">{{ sortOrderSymbol }}</span>
@@ -96,25 +97,32 @@ const sortKey = ref('');
 const sortAsc = ref(true);
 const currentView = ref('table');
 
+// Sort Order Symbol
 const sortOrderSymbol = computed(() => (sortAsc.value ? '▲' : '▼'));
 
+// Sort By Function
 function sortBy(key) {
   if (sortKey.value === key) {
+    // Toggle Sort Order
     sortAsc.value = !sortAsc.value;
   } else {
+    // Reset Sort Order
     sortKey.value = key;
     sortAsc.value = true;
   }
+  // Sort Contacts
   contacts.value.sort((a, b) => {
+    // Sort by Name or Email
     const valA = a[key].toLowerCase();
     const valB = b[key].toLowerCase();
     return sortAsc.value ? valA.localeCompare(valB) : valB.localeCompare(valA);
   });
 }
-
+// Filtered Contacts
 const filteredContacts = computed(() => {
   return contacts.value.filter((c) => {
     return (
+      // Search by Name or Email
       c.name.toLowerCase().includes(search.value.toLowerCase()) ||
       c.email.toLowerCase().includes(search.value.toLowerCase())
     );

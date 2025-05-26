@@ -1,4 +1,5 @@
 <template>
+    <!-- Card View -->
     <div
       :class="mode === 'card' ? 'border rounded-lg p-4 shadow hover:shadow-md transition hover:bg-white hover:text-black' 
       : 
@@ -16,9 +17,11 @@
 </template>
   
   <script setup>
+  // Define props
   defineProps({
     contact: Object,
     mode: {
+      // Define the mode prop
       type: String,
       default: 'card' // 'card' or 'list'
     }
